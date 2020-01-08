@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/axf/main/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,10 +103,18 @@
       <option name="presentableId" value="Default" />
       <updated>1578485058201</updated>
       <workItem from="1578485060483" duration="4208000" />
+      <workItem from="1578490925755" duration="608000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="89" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1578491608554">
+      <screen x="67" y="27" width="775" height="731" />
+    </state>
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578490946129" />
+    <state x="89" y="171" key="com.intellij.ide.util.TipDialog/67.27.775.731@67.27.775.731" timestamp="1578491608554" />
   </component>
 </project>

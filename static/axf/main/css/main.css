@@ -21,7 +21,7 @@ header, footer{
     display: flex;
 }
 header{
-    background:yellow;
+    background:green;
     top:0;
     left:0;
 }
