@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,8 @@
         {% endblock %}
     </title>
 
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/reset.css' %}">
     {% block ext_css %}
     
     {% endblock %}
@@ -25,6 +29,10 @@
 {% block foooter %}
 
 {% endblock %}
+
+<script type="text/javascript" src="{% static '/js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static '/js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static '/js/base.js' %}"></script>
 
 {% block ext_js %}
 
