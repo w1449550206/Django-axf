@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/market/market.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -32,6 +36,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/axf/main" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration name="axf" type="Python.DjangoServer" factoryName="Django server">
@@ -80,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578485058201</updated>
-      <workItem from="1578485060483" duration="1112000" />
+      <workItem from="1578485060483" duration="1660000" />
     </task>
     <servers />
   </component>
