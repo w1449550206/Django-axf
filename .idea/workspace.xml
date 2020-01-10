@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/axf/main/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/market/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/market/market.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,12 +18,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -104,6 +125,10 @@
       <updated>1578485058201</updated>
       <workItem from="1578485060483" duration="4208000" />
       <workItem from="1578490925755" duration="608000" />
+      <workItem from="1578627723140" duration="86000" />
+      <workItem from="1578627964341" duration="757000" />
+      <workItem from="1578628773693" duration="7158000" />
+      <workItem from="1578647578282" duration="2351000" />
     </task>
     <servers />
   </component>
@@ -111,10 +136,12 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="89" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1578491608554">
-      <screen x="67" y="27" width="775" height="731" />
+    <state x="88" y="141" key="com.intellij.ide.util.TipDialog" timestamp="1578647725539">
+      <screen x="67" y="27" width="733" height="579" />
     </state>
+    <state x="98" y="153" key="com.intellij.ide.util.TipDialog/67.27.1075.640@67.27.1075.640" timestamp="1578628801068" />
     <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578490946129" />
+    <state x="88" y="141" key="com.intellij.ide.util.TipDialog/67.27.733.579@67.27.733.579" timestamp="1578647725539" />
     <state x="89" y="171" key="com.intellij.ide.util.TipDialog/67.27.775.731@67.27.775.731" timestamp="1578491608554" />
   </component>
 </project>
