@@ -1,6 +1,12 @@
 
 {% extends 'base_main.html' %}
 {% load static %}
+
+{% block title %}
+    {{ block.super }}
+    主页
+{% endblock %}
+
 {% block ext_css %}
     {{ block.super }}
     <link rel="stylesheet" href="{% static 'axf/main/home/css/home.css' %}">

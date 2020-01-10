@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/home/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/market/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/market/market.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +123,8 @@
       <workItem from="1578627723140" duration="86000" />
       <workItem from="1578627964341" duration="757000" />
       <workItem from="1578628773693" duration="7158000" />
-      <workItem from="1578647578282" duration="2351000" />
+      <workItem from="1578647578282" duration="3677000" />
+      <workItem from="1578655462123" duration="308000" />
     </task>
     <servers />
   </component>
@@ -136,11 +132,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="88" y="141" key="com.intellij.ide.util.TipDialog" timestamp="1578647725539">
-      <screen x="67" y="27" width="733" height="579" />
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog" timestamp="1578655464994">
+      <screen x="67" y="27" width="733" height="573" />
     </state>
     <state x="98" y="153" key="com.intellij.ide.util.TipDialog/67.27.1075.640@67.27.1075.640" timestamp="1578628801068" />
-    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578490946129" />
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578655464994" />
     <state x="88" y="141" key="com.intellij.ide.util.TipDialog/67.27.733.579@67.27.733.579" timestamp="1578647725539" />
     <state x="89" y="171" key="com.intellij.ide.util.TipDialog/67.27.775.731@67.27.775.731" timestamp="1578491608554" />
   </component>
