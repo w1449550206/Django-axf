@@ -1,15 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="增加了首页的导航nav和必买mustbuy部分">
+      <change afterPath="$PROJECT_DIR$/Home/migrations/0002_axfnav.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/migrations/0003_axfmustbuy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axf/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/axf/main/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/axf/main/home/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/home/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/axf/main/home/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/home/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/cart_select.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/cart_select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/home_select.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home_select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/market.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/market.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/market_select.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/market_select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/mine.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/mine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/mine_select.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/mine_select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/ad01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/ad01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/ad02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/ad02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner05.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/banner16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/banner16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods001.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods002.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods002.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods003.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods003.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods004.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods005.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods006.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods006.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods007.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods007.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods009.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods009.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods010.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods010.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods011.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods011.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods012.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods012.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods013.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods013.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods015.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods015.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods016.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods016.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods017.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods017.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods018.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods018.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods019.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods019.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods020.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods020.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods021.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods022.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods022.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods023.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods023.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods024.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods025.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods025.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods026.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods026.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods027.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods027.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods028.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods028.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods029.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods029.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods030.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods030.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods031.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods031.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods032.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods032.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods033.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods033.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods034.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods034.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods035.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods035.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods036.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods036.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/goods037.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/goods037.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/slide01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/slide01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/slide02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/slide02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/slide03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/slide03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/images/slide04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/images/slide04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/market/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/market/market.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/axf/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_user.html" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +143,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="axf1907: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="axf1907@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="axf1907: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="axf_nav: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -56,6 +164,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="vicky" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1W6zuvl0jK0dgp0keaBilb3MX28" />
@@ -72,17 +191,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/axf/main/css" />
-      <recent name="$PROJECT_DIR$/static/axf/main/home/css" />
-      <recent name="$PROJECT_DIR$/templates/axf/main/cart" />
-      <recent name="$PROJECT_DIR$/templates/axf/main" />
-      <recent name="$PROJECT_DIR$/templates/axf/market" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/axf/main/home/js" />
@@ -90,6 +202,25 @@
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/css" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/axf/main/css" />
+      <recent name="$PROJECT_DIR$/static/axf/main/home/css" />
+      <recent name="$PROJECT_DIR$/templates/axf/main/cart" />
+      <recent name="$PROJECT_DIR$/templates/axf/main" />
+      <recent name="$PROJECT_DIR$/templates/axf/market" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="axf" type="Python.DjangoServer" factoryName="Django server">
@@ -118,15 +249,23 @@
     </configuration>
   </component>
   <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e146dbbf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e146dbbf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3e46c2db" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -148,47 +287,68 @@
       <workItem from="1578655462123" duration="3096000" />
       <workItem from="1578662826803" duration="851000" />
       <workItem from="1578664117894" duration="998000" />
-      <workItem from="1578725895788" duration="223000" />
+      <workItem from="1578725895788" duration="1442000" />
+      <workItem from="1578728167166" duration="823000" />
+      <workItem from="1578730223314" duration="12155000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加了首页的导航nav和必买mustbuy部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了首页的导航nav和必买mustbuy部分" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="110" y="27" width="800" height="594" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578658562379">
       <screen x="67" y="27" width="896" height="594" />
     </state>
     <state x="110" y="27" width="800" height="594" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.896.594@67.27.896.594" timestamp="1578658562379" />
-    <state width="899" height="122" key="GridCell.Tab.0.bottom" timestamp="1578663693124">
-      <screen x="67" y="27" width="953" height="594" />
+    <state width="721" height="109" key="GridCell.Tab.0.bottom" timestamp="1578726795354">
+      <screen x="67" y="27" width="1114" height="573" />
     </state>
     <state width="670" height="116" key="GridCell.Tab.0.bottom/67.27.1041.573@67.27.1041.573" timestamp="1578663272546" />
+    <state width="721" height="109" key="GridCell.Tab.0.bottom/67.27.1114.573@67.27.1114.573" timestamp="1578726795354" />
     <state width="899" height="122" key="GridCell.Tab.0.bottom/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
-    <state width="899" height="122" key="GridCell.Tab.0.center" timestamp="1578663693124">
-      <screen x="67" y="27" width="953" height="594" />
+    <state width="721" height="109" key="GridCell.Tab.0.center" timestamp="1578726795354">
+      <screen x="67" y="27" width="1114" height="573" />
     </state>
     <state width="670" height="116" key="GridCell.Tab.0.center/67.27.1041.573@67.27.1041.573" timestamp="1578663272543" />
+    <state width="721" height="109" key="GridCell.Tab.0.center/67.27.1114.573@67.27.1114.573" timestamp="1578726795354" />
     <state width="899" height="122" key="GridCell.Tab.0.center/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
-    <state width="899" height="122" key="GridCell.Tab.0.left" timestamp="1578663693124">
-      <screen x="67" y="27" width="953" height="594" />
+    <state width="721" height="109" key="GridCell.Tab.0.left" timestamp="1578726795354">
+      <screen x="67" y="27" width="1114" height="573" />
     </state>
     <state width="670" height="116" key="GridCell.Tab.0.left/67.27.1041.573@67.27.1041.573" timestamp="1578663272543" />
+    <state width="721" height="109" key="GridCell.Tab.0.left/67.27.1114.573@67.27.1114.573" timestamp="1578726795354" />
     <state width="899" height="122" key="GridCell.Tab.0.left/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
-    <state width="899" height="122" key="GridCell.Tab.0.right" timestamp="1578663693124">
-      <screen x="67" y="27" width="953" height="594" />
+    <state width="721" height="109" key="GridCell.Tab.0.right" timestamp="1578726795354">
+      <screen x="67" y="27" width="1114" height="573" />
     </state>
     <state width="670" height="116" key="GridCell.Tab.0.right/67.27.1041.573@67.27.1041.573" timestamp="1578663272545" />
+    <state width="721" height="109" key="GridCell.Tab.0.right/67.27.1114.573@67.27.1114.573" timestamp="1578726795354" />
     <state width="899" height="122" key="GridCell.Tab.0.right/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
     <state width="275" height="571" key="HiddenNamespacesPopup" timestamp="1578663151495">
       <screen x="67" y="27" width="1041" height="573" />
     </state>
     <state width="275" height="571" key="HiddenNamespacesPopup/67.27.1041.573@67.27.1041.573" timestamp="1578663151495" />
-    <state x="88" y="140" key="com.intellij.ide.util.TipDialog" timestamp="1578725896469">
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog" timestamp="1578728170070">
       <screen x="67" y="27" width="733" height="573" />
     </state>
     <state x="98" y="153" key="com.intellij.ide.util.TipDialog/67.27.1075.640@67.27.1075.640" timestamp="1578628801068" />
-    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578725896469" />
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578728170070" />
     <state x="88" y="141" key="com.intellij.ide.util.TipDialog/67.27.733.579@67.27.733.579" timestamp="1578647725539" />
     <state x="89" y="171" key="com.intellij.ide.util.TipDialog/67.27.775.731@67.27.775.731" timestamp="1578491608554" />
   </component>

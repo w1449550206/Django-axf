@@ -45,20 +45,40 @@
             <div class="swiper-wrapper">
                 {% for wheel in wheels %}
                     <a href="" class="swiper-slide">
-                        <img src="/static/{{ wheel.img }}" alt="">
+                        <img src="/static{{ wheel.img }}" alt="">
                     </a>
                 {% endfor %}
-
-
-
-
-
-
-
             </div>
             <div class="swiper-pagination"></div>
         </div>
 
+
+        <div class="topMenu">
+            <nav>
+                <ul>
+                    {% for nav in navs %}
+                        <li>
+                            <img src="/static{{ nav.img }}" alt="{{ nav.name }}">
+                            <span>{{ nav.name }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div id="swiperMenu" class="swiper-container">
+            <ul class = "swiper-wrapper">
+                {% for mustbuy in mustbuys %}
+                    <li class = "swiper-slide">
+                        <img src="/static{{ mustbuy.img }}" alt="">
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
+
+
 
 {% endblock %}
