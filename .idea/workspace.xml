@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/cart/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/axf/main/home/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/home/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/axf/main/market/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/market/market.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/mine/mine.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="axf1907@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="axf1907@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="axf1907@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="axf1907: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -33,6 +51,7 @@
         <option value="HTML File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,26 +68,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static/css" />
-      <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="$PROJECT_DIR$/static/axf/main/home" />
-      <recent name="$PROJECT_DIR$/static/font" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/axf/main/css" />
       <recent name="$PROJECT_DIR$/static/axf/main/home/css" />
       <recent name="$PROJECT_DIR$/templates/axf/main/cart" />
       <recent name="$PROJECT_DIR$/templates/axf/main" />
       <recent name="$PROJECT_DIR$/templates/axf/market" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/axf/main/home/js" />
+      <recent name="$PROJECT_DIR$/static/axf/main/home/css" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -78,6 +98,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="axf.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -124,7 +145,10 @@
       <workItem from="1578627964341" duration="757000" />
       <workItem from="1578628773693" duration="7158000" />
       <workItem from="1578647578282" duration="3677000" />
-      <workItem from="1578655462123" duration="308000" />
+      <workItem from="1578655462123" duration="3096000" />
+      <workItem from="1578662826803" duration="851000" />
+      <workItem from="1578664117894" duration="998000" />
+      <workItem from="1578725895788" duration="223000" />
     </task>
     <servers />
   </component>
@@ -132,11 +156,39 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="88" y="140" key="com.intellij.ide.util.TipDialog" timestamp="1578655464994">
+    <state x="110" y="27" width="800" height="594" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578658562379">
+      <screen x="67" y="27" width="896" height="594" />
+    </state>
+    <state x="110" y="27" width="800" height="594" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.896.594@67.27.896.594" timestamp="1578658562379" />
+    <state width="899" height="122" key="GridCell.Tab.0.bottom" timestamp="1578663693124">
+      <screen x="67" y="27" width="953" height="594" />
+    </state>
+    <state width="670" height="116" key="GridCell.Tab.0.bottom/67.27.1041.573@67.27.1041.573" timestamp="1578663272546" />
+    <state width="899" height="122" key="GridCell.Tab.0.bottom/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
+    <state width="899" height="122" key="GridCell.Tab.0.center" timestamp="1578663693124">
+      <screen x="67" y="27" width="953" height="594" />
+    </state>
+    <state width="670" height="116" key="GridCell.Tab.0.center/67.27.1041.573@67.27.1041.573" timestamp="1578663272543" />
+    <state width="899" height="122" key="GridCell.Tab.0.center/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
+    <state width="899" height="122" key="GridCell.Tab.0.left" timestamp="1578663693124">
+      <screen x="67" y="27" width="953" height="594" />
+    </state>
+    <state width="670" height="116" key="GridCell.Tab.0.left/67.27.1041.573@67.27.1041.573" timestamp="1578663272543" />
+    <state width="899" height="122" key="GridCell.Tab.0.left/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
+    <state width="899" height="122" key="GridCell.Tab.0.right" timestamp="1578663693124">
+      <screen x="67" y="27" width="953" height="594" />
+    </state>
+    <state width="670" height="116" key="GridCell.Tab.0.right/67.27.1041.573@67.27.1041.573" timestamp="1578663272545" />
+    <state width="899" height="122" key="GridCell.Tab.0.right/67.27.953.594@67.27.953.594" timestamp="1578663693124" />
+    <state width="275" height="571" key="HiddenNamespacesPopup" timestamp="1578663151495">
+      <screen x="67" y="27" width="1041" height="573" />
+    </state>
+    <state width="275" height="571" key="HiddenNamespacesPopup/67.27.1041.573@67.27.1041.573" timestamp="1578663151495" />
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog" timestamp="1578725896469">
       <screen x="67" y="27" width="733" height="573" />
     </state>
     <state x="98" y="153" key="com.intellij.ide.util.TipDialog/67.27.1075.640@67.27.1075.640" timestamp="1578628801068" />
-    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578655464994" />
+    <state x="88" y="140" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1578725896469" />
     <state x="88" y="141" key="com.intellij.ide.util.TipDialog/67.27.733.579@67.27.733.579" timestamp="1578647725539" />
     <state x="89" y="171" key="com.intellij.ide.util.TipDialog/67.27.775.731@67.27.775.731" timestamp="1578491608554" />
   </component>
