@@ -20,6 +20,7 @@
         <ul>
             {% for foodtype in foodtypes %}
                 <li>
+                    <span class="yellowSlide"></span>
                     <a href="">{{ foodtype.typename }}</a>
                 </li>
             {% endfor %}
@@ -27,6 +28,23 @@
 
         </ul>
         </aside>
+
+        <nav>
+            <ul>
+                <li>
+                    <span>
+                        全部分类
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        综合排序
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </li>
+            </ul>
+        </nav>
     </div>
 
 {% endblock %}

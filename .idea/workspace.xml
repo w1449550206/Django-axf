@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7441d4c8-2095-4085-bbc4-fe779666e64d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Market/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Market/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/axf/main/market/css/market.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/axf/main/market/css/market.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/axf/main/market/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/axf/main/market/market.html" afterDir="false" />
     </list>
@@ -251,11 +249,6 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1ec47757" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2198ae0c" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1ec47757" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4f006d97" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
@@ -287,7 +280,7 @@
       <workItem from="1578728167166" duration="823000" />
       <workItem from="1578730223314" duration="16009000" />
       <workItem from="1578798980133" duration="46000" />
-      <workItem from="1578799074361" duration="9732000" />
+      <workItem from="1578799074361" duration="10219000" />
     </task>
     <task id="LOCAL-00001" summary="增加了首页的导航nav和必买mustbuy部分">
       <created>1578753836824</created>
@@ -303,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578814686467</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="闪购的左栏实现">
+      <created>1578835821269</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578835821269</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +336,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加了首页的导航nav和必买mustbuy部分" />
     <MESSAGE value="完成首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成首页" />
+    <MESSAGE value="闪购的左栏实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="闪购的左栏实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="110" y="27" width="800" height="594" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578658562379">

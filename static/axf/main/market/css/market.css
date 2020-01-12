@@ -54,7 +54,7 @@ aside ul li a {
   color: grey;
   z-index: +1; }
 .yellowSlide {
-  background: green;
+  background: #ff8900;
   width: 0.1rem;
   height: 0.7rem;
   position: absolute;
