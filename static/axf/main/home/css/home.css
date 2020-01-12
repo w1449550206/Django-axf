@@ -4,12 +4,12 @@ footer .home span{
 }
 
 
-
 footer .home dd{
     width: 100%;
     height: 0.708333rem;
-    color: #ffbf09;
+    color: orange;
 }
+
 
 
 #home {
@@ -20,6 +20,8 @@ footer .home dd{
   width: 100%;
   padding-bottom: 3rem;
   position: fixed; }
+
+
 
 /*轮播*/
 #topSwiper {
@@ -35,7 +37,9 @@ footer .home dd{
   height: 100%; }
 
 
+
 /*nav*/
+
 .topMenu {
   padding-bottom: 0.10rem; }
 .topMenu nav {
@@ -51,8 +55,8 @@ footer .home dd{
   width: 2.5rem; }
 
 
-/*mustbuy*/
 
+/*mustbuy*/
 #swiperMenu {
   width: 100%; }
 
@@ -63,45 +67,45 @@ footer .home dd{
 
 
 
-.CVS {
-  background: white; }
-.CVS h2 img {
-  width: 100%; }
+/*.CVS {*/
+  /*background: white; }*/
+/*.CVS h2 img {*/
+  /*width: 100%; }*/
 
 
 
-.CVS fieldset {
-  border: none;
-  padding: 0; }
-.CVS fieldset > a {
-  display: inline-block;
-  width: 49%; }
-.CVS fieldset img {
-  width: 100%; }
+/*.CVS fieldset {*/
+  /*border: none;*/
+  /*padding: 0; }*/
+/*.CVS fieldset > a {*/
+  /*display: inline-block;*/
+  /*width: 49%; }*/
+/*.CVS fieldset img {*/
+  /*width: 100%; }*/
 
 
 
-.CVS ul {
-  display: flex; }
-.CVS ul li {
-  width: 2.5rem;
-  text-align: center;
-  font-size: 0.35rem; }
-.CVS ul li img {
-  width: 2.5rem; }
+/*.CVS ul {*/
+  /*display: flex; }*/
+/*.CVS ul li {*/
+  /*width: 2.5rem;*/
+  /*text-align: center;*/
+  /*font-size: 0.35rem; }*/
+/*.CVS ul li img {*/
+  /*width: 2.5rem; }*/
 
 
 
-.CVS ol {
-  display: flex;
-  flex-wrap: wrap; }
-.CVS ol li {
-  list-style: none;
-  width: 5rem; }
-.CVS > ol a {
-  display: block; }
-.CVS ol a img {
-  width: 100%; }
+/*.CVS ol {*/
+  /*display: flex;*/
+  /*flex-wrap: wrap; }*/
+/*.CVS ol li {*/
+  /*list-style: none;*/
+  /*width: 5rem; }*/
+/*.CVS > ol a {*/
+  /*display: block; }*/
+/*.CVS ol a img {*/
+  /*width: 100%; }*/
 
 
 
@@ -166,18 +170,18 @@ footer .home dd{
 .mainInfo > section > ul > li > button {
   border: 1px solid lightgrey;
   border-radius: 1111px;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.4rem;
+  height: 0.4rem;
   display: block;
   line-height: 0.0rem;
   text-align: center;
   color: orangered;
-  font-size: 0.8rem;
+  font-size: 0.4rem;
   position: absolute;
   right: 0;
   top: 3.6rem;
   background: white; }
 .mainInfo > section > ul > li > button > span {
   position: relative;
-  top: -0.05rem;
+  top: -0.03rem;
   margin: auto; }
