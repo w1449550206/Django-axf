@@ -12,3 +12,21 @@
 
     <link rel="stylesheet" href="{% static 'axf/main/market/css/market.css' %}">
 {% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    <div id="market">
+        <aside>
+        <ul>
+            {% for foodtype in foodtypes %}
+                <li>
+                    <a href="">{{ foodtype.typename }}</a>
+                </li>
+            {% endfor %}
+
+
+        </ul>
+        </aside>
+    </div>
+
+{% endblock %}
