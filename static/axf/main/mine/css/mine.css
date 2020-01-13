@@ -27,7 +27,7 @@ footer .mine dd{
   top: 0;
   width: 100%;
   height: 4rem;
-  background: pink;
+  background: #ff8900;
   padding-top: 0.5rem; }
 .fixed > span {
   display: block;
@@ -48,7 +48,7 @@ footer .mine dd{
 .fixed p span:first-child {
   color: black; }
 .fixed p span:last-child {
-  color: red;
+  color: #fffefd;
   display: inline-block;
   text-indent: 0.3rem; }
 #regis {
