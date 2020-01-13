@@ -1,4 +1,9 @@
 $(function () {
+
+    var flagname = false;
+    var flagpassword = false;
+
+
     $('#name').blur(function () {
         var name = $('#name').val();
 
@@ -18,15 +23,12 @@ $(function () {
                       function (data) {
                             if(data['status'] == 200){
                                 $('#nameinfo').html(data['msg']).css('color','green');
+                                flagname = true
                             }else{
                                 $('#nameinfo').html(data['msg']).css('color','red');
                             }
                       }
                 )
-
-
-
-
 
         }else{
             $('#nameinfo').html('用户名字格式错误').css('color','red');
@@ -34,5 +36,55 @@ $(function () {
 
 
     })
+
+    $('#confirmpassword').blur(function () {
+        var password = $('#password').val();
+        var confirmpassword = $('#confirmpassword').val();
+
+        if(password == confirmpassword){
+            $('#passwordinfo').html('密码一致').css('color','green');
+            flagpassword = true
+        }else{
+            $('#passwordinfo').html('密码不一致').css('color','red');
+            // $('#password').val('');
+            // $('#confirmpassword').val('');
+        }
+    })
+
+    //submit函数的返回值 必须是true的情况下 才可以允许提交  如果是false 那么则不允许提交
+    $('form').submit(function () {
+
+        var name = $('#name').val();
+
+        if(!name){
+            $('#nameinfo').html('用户名字不能为空').css('color','red');
+        }
+
+        var password = $('#password').val()
+
+        if(!password){
+            $('#pwd').html('密码不能为空').css('color','red');
+        }
+
+
+        var b = flagname & flagpassword;
+
+        if(b==0){
+            return false;
+        }else{
+
+            var password = $('#password').val();
+
+            var secret_password = md5(password);
+
+            $('#password').val(secret_password);
+
+
+
+            return true;
+        }
+    })
+
+
 
 })
