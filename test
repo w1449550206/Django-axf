@@ -1,0 +1,9 @@
+day09
+    1 进入到闪购 显示的是热销榜
+        foodtype===>typeid    ===  axfgoods ===>categoryid
+    2 点击左栏菜单 然后显示对应商品
+    3 左栏的高亮
+
+    4 二级联动
+
+    5 三级联动

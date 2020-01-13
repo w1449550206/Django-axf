@@ -1,0 +1,145 @@
+{% extends 'base_main.html' %}
+
+
+{% load static %}
+
+
+{% block title %}
+    {{ block.super }}
+    闪购
+{% endblock %}
+
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/main/market/css/market.css' %}">
+{% endblock %}
+
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/main/market/js/market.js' %}"></script>
+{% endblock %}
+
+
+
+
+{% block content %}
+    {{ block.super }}
+
+    <div id="market">
+        <aside>
+            <ul>
+                {% for foodtype in foodtypes %}
+                    <li>
+                        {% if foodtype.typeid == typeid %}
+                            <span class="yellowSlide"></span>
+                        {% endif %}
+                        <a href="{% url 'axfmarket:market' %}?typeid={{ foodtype.typeid }}">{{ foodtype.typename }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+        </aside>
+
+
+        <nav>
+            <ul>
+                <li>
+                    <span id="all_type">全部分类
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </li>
+                <li>
+                    <span id="sort_rule">综合排序
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section>
+            <menu>
+                <ul>
+                    {% for goods in goods_list %}
+                        <li>
+                            <a href="">
+                                <img src="/static{{ goods.productimg }}" alt="">
+
+                                <div class="shoppingInfo">
+                                    <h6>{{ goods.productlongname }}</h6>
+
+                                    <p class="detailTag">
+                                        <span>精选</span>
+                                        <span></span>
+                                    </p>
+                                    <p class="unit">{{ goods.specifics }}</p>
+
+                                    <p class="price">
+                                        <span>￥{{ goods.price }}</span>
+                                        <s>￥{{ goods.marketprice }}</s>
+                                    </p>
+                                </div>
+
+
+
+                            </a>
+
+                            <section>
+                                <button>
+                                    <span>-</span>
+                                </button>
+
+                                <span>0</span>
+
+                                <button>
+                                    <span>+</span>
+                                </button>
+                            </section>
+
+
+                        </li>
+                    {% endfor %}
+                </ul>
+
+
+                <div hidden="hidden" id="all_type_container">
+                    <div>
+                        {% for cname in cname_list %}
+                            <a href="{% url 'axfmarket:market' %}?typeid={{ typeid }}&childcid={{ cname.1 }}&rule={{ rule }}">
+                                {% if cname.1 == childcid %}
+                                    <span style="background-color: green;color: white">{{ cname.0 }}</span>
+                                    {% else %}
+                                    <span>{{ cname.0 }}</span>
+
+                                {% endif %}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+
+                <div hidden="hidden" id="sort_rule_container">
+                    <div>
+                        {% for sort_rule in sort_rule_list %}
+                             <a href="{% url 'axfmarket:market' %}?typeid={{ typeid }}&childcid={{ childcid }}&rule={{ sort_rule.1 }}">
+                                 {% if rule == sort_rule.1%}
+                                    <span style="background-color: green;color: white">{{ sort_rule.0 }}</span>
+                                    {% else %}
+                                     <span>{{ sort_rule.0 }}</span>
+                                 {% endif %}
+
+                             </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </menu>
+        </section>
+
+
+    </div>
+
+
+
+{% endblock %}

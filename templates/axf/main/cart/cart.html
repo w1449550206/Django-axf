@@ -1,0 +1,16 @@
+{% extends 'base_main.html' %}
+
+
+{% load static %}
+
+
+{% block title %}
+    {{ block.super }}
+    购物车
+{% endblock %}
+
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/main/cart/css/cart.css' %}">
+{% endblock %}
