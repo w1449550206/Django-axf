@@ -2,6 +2,6 @@ from django.conf.urls import url
 
 from Cart import views
 
-urlpatterns = [
+urlpatterns=[
     url(r'^cart/',views.cart,name='cart')
 ]

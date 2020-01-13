@@ -2,6 +2,6 @@ from django.conf.urls import url
 
 from Mine import views
 
-urlpatterns=[
+urlpatterns = [
     url(r'^mine/',views.mine,name='mine')
 ]

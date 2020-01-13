@@ -2,6 +2,12 @@ from django.db import models
 
 # Create your models here.
 
+
+# insert into axf_foodtype
+# (typeid,typename,childtypenames,typesort) values
+# ("104749","热销榜","全部分类:0",1)
+
+
 class AxfFoodType(models.Model):
     typeid = models.CharField(max_length=32)
     typename = models.CharField(max_length=64)
@@ -9,7 +15,8 @@ class AxfFoodType(models.Model):
     typesort = models.IntegerField()
 
     class Meta:
-        db_table='axf_foodtype'
+        db_table = 'axf_foodtype'
+
 
 # goods
 # axf_goods (id, productid, productimg, productname, productlongname,

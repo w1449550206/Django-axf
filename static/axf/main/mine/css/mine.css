@@ -3,8 +3,7 @@ footer .mine span{
     background-size:0.513889rem;
 }
 
+
 footer .mine dd{
-    width: 100%;
-    height: 0.708333rem;
-    color: #ffbf09;
+    color: orange;
 }

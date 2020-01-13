@@ -4,7 +4,5 @@ footer .cart span{
 }
 
 footer .cart dd{
-    width: 100%;
-    height: 0.708333rem;
-    color: #ffbf09;
+    color: orange;
 }
