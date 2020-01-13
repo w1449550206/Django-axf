@@ -30,4 +30,7 @@ urlpatterns = [
 
     # mine
     url(r'^axfmine/',include('Mine.urls',namespace='axfmine')),
+
+    # user
+    url(r'^axfuser/',include('User.urls',namespace='axfuser')),
 ]
