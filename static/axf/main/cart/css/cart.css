@@ -23,7 +23,7 @@ h3 {
   width: 100%;
   border-bottom: 0.04rem solid #d38d51;
   line-height: 1.5rem;
-  background: green;
+  background: #ff8900;
   top: 0;
     color: whitesmoke;
 }
@@ -33,7 +33,7 @@ h3 {
 
 
 .full > section {
-  background: lightpink; }
+  background: #f0e000; }
 
 .full > section > ul {
   border: 0.2rem dashed lightgreen;
@@ -87,7 +87,7 @@ h3 {
 .bill > p {
   padding: 0 0.3rem;
   font-size: 0.3rem;
-  color: #50d324; }
+  color: #ff0000; }
 
 .bill > p:first-child:before {
   width: 0.2rem;
