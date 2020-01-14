@@ -41,6 +41,11 @@ footer .mine dd{
   text-align: center;
   border-radius: 50%;
   line-height: 1.8rem; }
+.fixed > span > img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
 .fixed p {
   margin-bottom: 0.5rem;
   font-size: 0.5rem;
@@ -48,7 +53,7 @@ footer .mine dd{
 .fixed p span:first-child {
   color: black; }
 .fixed p span:last-child {
-  color: #fffefd;
+  color: red;
   display: inline-block;
   text-indent: 0.3rem; }
 #regis {
