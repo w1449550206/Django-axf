@@ -26,9 +26,22 @@
 
     <div id="mine">
         <div class="fixed">
-            <span class="glyphicon glyphicon-user"></span>
 
-            <p id="login">未登录</p>
+            {% if user.id %}
+                    <span>
+                        <img src="/static/upload/{{ user.icon }}" alt="">
+                    </span>
+                {% else %}
+                    <span class="glyphicon glyphicon-user"></span>
+            {% endif %}
+
+
+
+            {% if user.id %}
+                    <p>{{ user.name }}</p>
+                {% else %}
+                    <p id="login">未登录</p>
+            {% endif %}
 
             <p>
                 <span class="glyphicon glyphicon-fire"></span>
@@ -42,7 +55,12 @@
             </p>
         </div>
 
-        <div id="regis">注册</div>
+        {% if user.id %}
+            <div></div>
+            {% else %}
+            <div id="regis">注册</div>
+        {% endif %}
+
 
         <div class="mine">
             <p>
@@ -134,9 +152,12 @@
 
             </menu>
 
-            <p>
-                <a href="">退出</a>
-            </p>
+            {% if user.id %}
+                <p>
+                    <a href="{% url 'axfuser:logout' %}">退出</a>
+                </p>
+            {% endif %}
+
         </div>
 
 

@@ -1,6 +1,6 @@
 {% extends 'base_user.html' %}
 
-
+{% load static %}
 
 
 {% block header %}
@@ -14,9 +14,22 @@
     登录
 {% endblock %}
 
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/user/js/login.js' %}"></script>
+    <script type="text/javascript" src="{% static 'axf/user/js/md5.js' %}"></script>
+
+{% endblock %}
+
+
 {% block content %}
     {{ block.super }}
-    <form>
+
+
+    <form action="{% url 'axfuser:login' %}" method="post">
+        <span style="color: red">{{ msg }}</span>
+        {% csrf_token %}
         <div class="container">
 
           <div class="form-group">
@@ -27,6 +40,12 @@
             <label for="exampleInputPassword">密码:</label>
             <input type="password" class="form-control" name="password" id="password" placeholder="请输入密码">
           </div>
+
+            <div class="form-group">
+            <label for="img1">验证码:</label>
+            <input type="text" class="form-control" name="imgcode" id="img1" placeholder="请输入验证码">
+          </div>
+            <img src="/axfuser/get_code/" alt="" id="changeimg">
 
           <button type="submit" class="btn btn-success btn-block">登录</button>
             </div>
