@@ -51,26 +51,34 @@
                     <input type="text" placeholder="请输入一百字对班长的特殊要求">
                 </div>
 
-
-                <div class="menuList">
+                {% for cart in carts %}
+                    <div class="menuList">
                         <div class="confirm">
                             <span>
-                                <span>✔</span>
+                                {% if cart.c_is_select %}
+                                    <span>✔</span>
+                                    {% else %}
+                                    <span></span>
+                                {% endif %}
+
                             </span>
                         </div>
 
-                    <a href="">
-                        <img src="/static/media/images/banner16.jpg" alt="">
-                        <p>烤羊排</p>
-                        <p class="presentPrice">0.0</p>
-                    </a>
+                        <a href="">
+                            <img src="/static{{ cart.c_goods.productimg }}" alt="">
+                            <p>{{ cart.c_goods.productlongname }}</p>
+                            <p class="presentPrice">{{ cart.c_goods.price }}</p>
+                        </a>
 
-                    <section>
-                        <button>-</button>
-                        <span>0.0</span>
-                        <button>+</button>
-                    </section>
-                </div>
+                        <section>
+                            <button>-</button>
+                            <span>{{ cart.c_goods_num }}</span>
+                            <button>+</button>
+                        </section>
+                    </div>
+                {% endfor %}
+
+
 
                 <div class="payTheBill">
 
