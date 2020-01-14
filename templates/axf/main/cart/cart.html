@@ -14,3 +14,89 @@
     {{ block.super }}
     <link rel="stylesheet" href="{% static 'axf/main/cart/css/cart.css' %}">
 {% endblock %}
+
+
+{% block content %}
+    {{ block.super }}
+
+    <div id="cart">
+        <h3>
+            购物车
+        </h3>
+
+        <div class="full">
+            <section>
+                <ul>
+                    <li>收货人:action</li>
+                    <li>电话  :18888888888</li>
+                    <li>地址  :张家堡</li>
+                </ul>
+
+
+                <div class="bill">
+                    <p>闪送超市</p>
+                    <p>0元起送，不买也可以送，送祝福</p>
+                    <a href="">凑单专区</a>
+                </div>
+
+
+                <div class="delivery">
+                    <span>收货时间</span>
+                    <span>一小时可以送达</span>
+                    <a href="">可预定》</a>
+                </div>
+
+                <div class="delivery">
+                    <span>收货备注</span>
+                    <input type="text" placeholder="请输入一百字对班长的特殊要求">
+                </div>
+
+
+                <div class="menuList">
+                        <div class="confirm">
+                            <span>
+                                <span>✔</span>
+                            </span>
+                        </div>
+
+                    <a href="">
+                        <img src="/static/media/images/banner16.jpg" alt="">
+                        <p>烤羊排</p>
+                        <p class="presentPrice">0.0</p>
+                    </a>
+
+                    <section>
+                        <button>-</button>
+                        <span>0.0</span>
+                        <button>+</button>
+                    </section>
+                </div>
+
+                <div class="payTheBill">
+
+                    <div class="confirm">
+                            <span>
+                                <span>✔</span>
+                            </span>
+                    </div>
+                    <p>
+                        <span>
+                            全选
+                        </span>
+                        <span>
+                            共计：
+                        </span>
+                        <span>0.0</span>
+                    </p>
+                    <a href="">下单</a>
+                </div>
+
+            </section>
+        </div>
+
+
+
+    </div>
+
+
+{% endblock %}
