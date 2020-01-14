@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 from Cart.models import AxfCart
 
@@ -55,4 +56,50 @@ def addToCart(request):
         'c_goods_num':cart.c_goods_num
     }
 
+    return JsonResponse(data=data)
+
+@csrf_exempt
+def subToCart(request):
+
+    cartid = request.POST.get('cartid')
+
+    cart = AxfCart.objects.get(pk=cartid)
+
+    num = cart.c_goods_num
+
+    data = {
+        'msg': 'ok',
+        'status': 200,
+    }
+
+    if num == 1:
+        cart.delete()
+
+    else:
+        cart.c_goods_num = cart.c_goods_num - 1
+        cart.save()
+        data['c_goods_num']=cart.c_goods_num
+
+
+
+
+    return JsonResponse(data=data)
+
+
+def changeStatus(request):
+
+    cartid = request.GET.get('cartid')
+
+    cart = AxfCart.objects.get(pk=cartid)
+
+    cart.c_is_select = not cart.c_is_select
+
+    cart.save()
+
+
+    data={
+        'msg':'ok',
+        'status':200,
+        'c_is_select':cart.c_is_select
+    }
     return JsonResponse(data=data)
