@@ -16,6 +16,9 @@ class AxfUser(models.Model):
     # 激活状态
     active = models.BooleanField(default=False)
 
+    # 唯一标识
+    token = models.CharField(max_length=256)
+
 
     class Meta:
         db_table = 'axfuser'
