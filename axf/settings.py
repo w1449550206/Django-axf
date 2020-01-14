@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'Market',
     'Cart',
     'Mine',
-    'User',
+    'User'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middleware.middleware.LoginMiddle',
 ]
 
 ROOT_URLCONF = 'axf.urls'
@@ -136,4 +137,27 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
 
+
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/upload')
+
+
+# 发送邮件的配置
+
+# 邮箱的主机地址
+EMAIL_HOST='smtp.163.com'
+EMAIL_PORT=25
+EMAIL_HOST_USER='w1449550206@163.com'
+EMAIL_HOST_PASSWORD='wangwenqi5261'
+
+
+CACHES={
+                    'default':{
+                        'BACKEND':'django_redis.cache.RedisCache',
+                        'LOCATION':'redis://127.0.0.1:6379/0',
+                        'OPTIONS':{
+                                'CLIENT_CLASS':'django_redis.client.DefaultClient'
+                        }
+                    }
+                }
+
+FONT_PATH = os.path.join(BASE_DIR,'static/fonts/ADOBEARABIC-BOLDITALIC.OTF')
