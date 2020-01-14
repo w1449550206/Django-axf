@@ -16,6 +16,13 @@
 {% endblock %}
 
 
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/main/cart/js/cart.js' %}"></script>
+{% endblock %}
+
+
+
 {% block content %}
     {{ block.super }}
 
@@ -52,7 +59,7 @@
                 </div>
 
                 {% for cart in carts %}
-                    <div class="menuList">
+                    <div class="menuList" cartid="{{ cart.id }}">
                         <div class="confirm">
                             <span>
                                 {% if cart.c_is_select %}
@@ -71,7 +78,7 @@
                         </a>
 
                         <section>
-                            <button>-</button>
+                            <button class="subToCart">-</button>
                             <span>{{ cart.c_goods_num }}</span>
                             <button>+</button>
                         </section>
