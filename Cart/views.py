@@ -18,8 +18,13 @@ def cart(request):
 
     carts = AxfCart.objects.filter(c_user_id=user_id)
 
+    # 判断数据库中的选中状态  是否为全选
+    is_all_select = not AxfCart.objects.filter(c_user_id=user_id).filter(c_is_select=False).exists()
+
+
     context = {
-        'carts':carts
+        'carts':carts,
+        'is_all_select':is_all_select,
     }
 
     return render(request,'axf/main/cart/cart.html',context=context)
@@ -97,9 +102,40 @@ def changeStatus(request):
     cart.save()
 
 
+    user_id = request.session.get('user_id')
+
+
+    # 在点击修改选中状态之后 再次去判断了  数据库中 是否购物车中的数据全部选中
+    is_all_select = not AxfCart.objects.filter(c_user_id=user_id).filter(c_is_select=False).exists()
+
+
     data={
         'msg':'ok',
         'status':200,
-        'c_is_select':cart.c_is_select
+        'c_is_select':cart.c_is_select,
+        'is_all_select':is_all_select,
     }
+    return JsonResponse(data=data)
+
+
+def allSelect(request):
+
+
+    cartlist = request.GET.get('cartlist')
+
+    # ['13', '14', '15']
+    cartid_list = cartlist.split('#')
+
+    # 将当前用户的购物车中的在cartid_list中的数据 的c_is_select的值取反
+
+    cart_list = AxfCart.objects.filter(id__in=cartid_list)
+
+    for cart in cart_list:
+        cart.c_is_select = not cart.c_is_select
+        cart.save()
+    data = {
+        'msg': 'ok',
+        'status': 200,
+    }
+
     return JsonResponse(data=data)
