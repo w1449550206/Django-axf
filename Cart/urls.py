@@ -13,4 +13,7 @@ urlpatterns=[
 
 #     改变购物车选中状态
     url(r'^changeStatus/',views.changeStatus),
+
+#     全选
+    url(r'^allSelect/',views.allSelect),
 ]
