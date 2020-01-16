@@ -1,4 +1,3 @@
-from alipay import AliPay
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 
@@ -8,12 +7,10 @@ from django.views.decorators.csrf import csrf_exempt
 from Cart.models import AxfCart
 from Cart.view_containt import get_total_price
 from Order.models import AxfOrder, AxfOrderGoods
-from axf.settings import PRIVATE_KEY, PUBLIC_KEY
 
 
 @csrf_exempt
 def makeOrder(request):
-
     # 在订单的页面 应该展示的是ordergoods的数据
     # ordergoods依赖于order
     # order依赖于user
@@ -22,20 +19,14 @@ def makeOrder(request):
 
     # user_id = request.user_id
 
-
     order = AxfOrder()
     order.o_user_id = user_id
     order.o_price = get_total_price(user_id)
     order.save()
 
-
-
     carts = AxfCart.objects.filter(c_user_id=user_id).filter(c_is_select=True)
 
-
-
     for cart in carts:
-
         ordergoods = AxfOrderGoods()
 
         ordergoods.og_order = order
@@ -48,18 +39,16 @@ def makeOrder(request):
 
         cart.delete()
 
-
-    data= {
-        'msg':'ok',
-        'status':200,
-        'order_id':order.id
+    data = {
+        'msg': 'ok',
+        'status': 200,
+        'order_id': order.id
     }
 
     return JsonResponse(data=data)
 
 
 def orderDetail(request):
-
     order_id = request.GET.get('order_id')
 
     order = AxfOrder.objects.get(pk=order_id)
@@ -67,11 +56,10 @@ def orderDetail(request):
     print(order.id)
 
     context = {
-        'order':order
+        'order': order
     }
 
-    return render(request,'axf/order/orderDetail.html',context=context)
-
+    return render(request, 'axf/order/orderDetail.html', context=context)
 
 # def testPay(request):
 #
