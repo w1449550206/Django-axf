@@ -19,10 +19,10 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
-#     home
+    # home
     url(r'^axfhome/',include('Home.urls',namespace='axfhome')),
 
-#     market
+    # market
     url(r'^axfmarket/',include('Market.urls',namespace='axfmarket')),
 
     # cart
@@ -33,4 +33,7 @@ urlpatterns = [
 
     # user
     url(r'^axfuser/',include('User.urls',namespace='axfuser')),
+
+    # order
+    url(r'^axforder/',include('Order.urls',namespace='axforder')),
 ]
