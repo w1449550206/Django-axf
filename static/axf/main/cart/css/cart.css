@@ -246,7 +246,7 @@ h3 {
   content: "¥";
   font-size: 0.35rem; }
 
-.payTheBill > a {
+.payTheBill > span {
   background: yellow;
   position: absolute;
   right: 0;
