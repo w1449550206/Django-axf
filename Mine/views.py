@@ -6,7 +6,9 @@ from User.models import AxfUser
 
 def mine(request):
 
-    user_id = request.session.get('user_id')
+    # user_id = request.session.get('user_id')
+
+    user_id = request.user_id
 
     if user_id:
 
