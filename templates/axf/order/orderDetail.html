@@ -1,0 +1,66 @@
+{% extends 'base_order.html' %}
+
+{% load static %}
+
+
+{% block header %}
+    {{ block.super }}
+    <header></header>
+{% endblock %}
+
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/order/js/orderDetail.js' %}"></script>
+{% endblock %}
+
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/order/css/order_detail.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    {{ block.super }}
+    订单详情
+{% endblock %}
+
+
+{% block content %}
+    {{ block.super }}
+
+    <div class="container">
+    
+
+        <h3>订单编号:{{ order.id }}</h3>
+
+        {% for ordergoods in order.axfordergoods_set.all %}
+
+            <div class="menuList">
+                <a href="">
+                    <img src="/static{{ ordergoods.og_goods.productimg}}" alt="">
+                    <p>{{ ordergoods.og_goods.productlongname }}</p>
+                    <p class="presentPrice">{{ ordergoods.og_goods.price }}</p>
+                </a>
+
+                <section>
+                    <span>{{ ordergoods.og_num }}</span>
+                </section>
+           </div>
+
+
+        {% endfor %}
+
+
+
+            <div class="total_price">总计:
+                <span id="total_price">{{ order.o_price }}</span>
+            </div>
+
+        <span id = 'testpay'class="btn btn-success btn-block">支付</span>
+
+    </div>
+
+
+{% endblock %}
