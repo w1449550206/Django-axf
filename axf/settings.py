@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Mine',
     'User',
     'Order',
+    # 'debug_toolbar'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'middleware.middleware.LoginMiddle',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'axf.urls'
@@ -91,7 +92,7 @@ DATABASES = {
         'HOST':'localhost',
         'PORT':3306,
         'USER':'root',
-        'PASSWORD':'root'
+        'PASSWORD':'wangwenqi5261'
     }
 }
 
@@ -163,3 +164,9 @@ CACHES={
                 }
 
 FONT_PATH = os.path.join(BASE_DIR,'static/fonts/ADOBEARABIC-BOLDITALIC.OTF')
+
+
+PUBLIC_KEY = open(os.path.join(BASE_DIR,'alipay_config/alipay_rsa_public_key.pem'),'r').read()
+PRIVATE_KEY = open(os.path.join(BASE_DIR,'alipay_config/app_rsa_private_key.pem'),'r').read()
+
+INTERNAL_IPS=('127.0.0.1')

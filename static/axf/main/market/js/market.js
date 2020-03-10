@@ -47,6 +47,8 @@ $(function(){
               function (data) {
                   if(data['status'] == 200){
                         $button.prev().html(data['c_goods_num']);
+                  }else{
+                      window.location.href='/axfuser/login/'
                   }
               }
             )

@@ -23,7 +23,7 @@ h3 {
   width: 100%;
   border-bottom: 0.04rem solid #d38d51;
   line-height: 1.5rem;
-  background: #ff8900;
+  background: green;
   top: 0;
     color: whitesmoke;
 }
@@ -33,7 +33,7 @@ h3 {
 
 
 .full > section {
-  background: #f0e000; }
+  background: lightpink; }
 
 .full > section > ul {
   border: 0.2rem dashed lightgreen;

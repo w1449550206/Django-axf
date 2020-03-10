@@ -2,8 +2,8 @@ $(function () {
     $('#changeimg').click(function () {
         $(this).attr('src','/axfuser/get_code/?'+Math.random())
     })
-
-
+    
+    
     $('form').submit(function () {
         var password = $('#password').val();
 

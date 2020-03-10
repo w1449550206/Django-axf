@@ -121,7 +121,7 @@ $(function () {
         var unselect_list = [];
 
         var $confirm = $('.confirm');
-
+        
         $confirm.each(function () {
 
             var $div = $(this);
@@ -133,7 +133,7 @@ $(function () {
             }else{
                 unselect_list.push(cartid)
             }
-
+            
         })
 
     //    购物车中没有选中商品则不需要继续生成订单
